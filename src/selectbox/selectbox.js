@@ -191,8 +191,9 @@ angular.module('selectbox', [])
 
         /* watch if selected index has been changed */
         $scope.$watch('index', function(n, o) {
+            parseSelected();
+
             if (n !== o) {
-                parseSelected();
                 // we only call the handler function after the index was updated:
                 // (modified by @paulovelho)
                 $scope.handler();
