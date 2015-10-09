@@ -196,7 +196,7 @@ angular.module('selectbox', [])
             if (n !== o) {
                 // we only call the handler function after the index was updated:
                 // (modified by @paulovelho)
-                $scope.handler(n);
+                $scope.handler();
             }
         });
 
