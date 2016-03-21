@@ -226,7 +226,7 @@ angular.module('selectbox', [])
                 handler: '&'
             },
             controller: 'SelectBoxCtrl',
-            template: '<div tabindex="{{ view.tabindex }}" class="mad-selectbox" ng-class="{\'mad-selectbox-multi\': multi}">'+
+            template: '<div tabindex="{{ view.tabindex }}" class="mad-selectbox" ng-class="{\'mad-selectbox-multi\': multi,\'selected\':index>0}">'+
                         '<a href ' +
                             'id="{{ view.instanceId }}"'+
                             'class="mad-selectbox-toggle"'+
